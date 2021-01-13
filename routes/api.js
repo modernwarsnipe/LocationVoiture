@@ -40,4 +40,4 @@ function addApiRoutes(app, config, callback) {
 
 module.exports = {
     addRoutes: addApiRoutes
-}
+};
