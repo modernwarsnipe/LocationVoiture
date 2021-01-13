@@ -118,4 +118,4 @@ module.exports = (config, callback) => {
         });
     });
 
-};
+}
