@@ -1,0 +1,38 @@
+{
+			"name": "taches",
+			"version": "1.0.0",
+			"description": "projet",
+			"main": "index.js",
+			"scripts": {
+						"prestart": "start mongod --dbpath data/prod",
+						"start": "node index.js",
+						"poststart": "start mongo admin --eval \"db.getSiblingDB('admin').shutdownServer()\"",
+						"pretest": "start mongod --dbpath data/test",
+						"test": "mocha --exit --timeout 5000",
+						"posttest": "start mongo admin --eval \"db.getSiblingDB('admin').shutdownServer()\""
+			},
+			"keywords": [
+						"taches",
+						"node",
+						"mongodb",
+						"express",
+						"pug",
+						"mocha",
+						"chai"
+			],
+			"author": "Andreï DE BONA",
+			"license": "ISC",
+			"dependencies": {
+						"chalk": "^3.0.0",
+						"crypto": "^1.0.1",
+						"express": "^4.17.1",
+						"mongodb": "^3.3.5",
+						"pug": "^2.0.4",
+						"request": "^2.88.0"
+			},
+			"devDependencies": {
+						"body-parser": "^1.19.0",
+						"chai": "^4.2.0",
+						"mocha": "^6.2.2"
+			}
+}
