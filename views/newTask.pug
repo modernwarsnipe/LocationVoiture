@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Nouvelle tache
+    link(rel='stylesheet', type='text/css', href='styles/global.css')    
+  body
+
+    h2 Nouvelle tache
+
+    if success
+      p Erreur lors de la création de tache.
+    else
+      p Nouvelle tâche bien crée
+    
+    a(href='/') Retour à l'accueil

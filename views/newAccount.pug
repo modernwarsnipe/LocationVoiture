@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title New account created
+    link(rel='stylesheet', type='text/css', href='styles/global.css')    
+  body
+
+    h2 Nouveau compte
+
+    if success
+      p Erreur lors de la création de compte.
+    else
+      p Nouveau compte bien créé
+     
+    a(href='/') Retour à l'accueil
+      

@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    
+    title Mes tâches
+    link(rel='stylesheet', type='text/css', href='styles/global.css')
+  body
+    a(href='inscription') S'inscrire
+    form(action='connexion', method='post')
+      tr
+        td: input(type='text' name='username' placeholder="Nom d'utilisateur")
+        td: input(type='password' name='pw' placeholder="Mot de passe")
+        td: input(type='submit' text='Send' value="Se connecter") 
+    h1 Mes tâches
+    form(action='tache', method='post')
+      table#accounts
+        thead
+          tr
+            th email  
+            th username     
+            th tâches   
+            th
+        tbody
+          each account in accountList
+            tr
+              td= account.email
+              td= account.username
+              td= account.taches
+              td: input(type='submit' text='send' value="Nouvelle tache")
+              td
+    

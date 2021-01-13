@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Nouvelle tache 
+    link(rel='stylesheet', type='text/css', href='styles/global.css')
+  body
+    h1 Ajouter une tache à accounts[0]
+
+    form(action='newTask', method='post')
+      table#tasks
+        thead
+          tr
+            th Tache
+            th
+        tfoot
+          tr
+            td: input(type='text' name='task')
+            td: input(type='submit' text='Send')
+            td
+			
+  a(href='/') Retour à l'accueil

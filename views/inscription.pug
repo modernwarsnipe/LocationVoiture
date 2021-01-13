@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Inscription
+    link(rel='stylesheet', type='text/css', href='styles/global.css')
+  body
+    h1 Formulaire d'inscription
+
+    form(action='newAccount', method='post')
+      table#accounts
+        thead
+          tr
+            th Email
+            th Nom d'utilisateur
+            th Mot de passe
+            th
+        tfoot
+          tr
+            td: input(type='text' name='email')
+            td: input(type='text' name='username')
+            td: input(type='password' name='pw')
+            td: input(type='submit' text='Send')
+  a(href='/') Retour à l'accueil
