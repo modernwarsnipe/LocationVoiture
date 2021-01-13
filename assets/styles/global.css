@@ -1,0 +1,60 @@
+html, body {
+    height: 400px;
+    font-family: 'Varela', sans-serif;
+}
+
+body {
+    with: 800px;
+    margin-left: 150px;
+    padding-left: 20px;
+    border-left: 1px solid black;
+}
+
+h1, h2, h3 {
+    font-family: Verdana;
+    text-decoration: underline;
+}
+
+h1 {
+    margin-bottom: 38px;
+}
+
+h2 {
+    margin-bottom: 26px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 700px;
+    padding: 5px;
+}
+
+td {
+    padding: 4px 3px 4px 3px;
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+tr:hover {
+    background-color: #D8D8D8;
+}
+
+th {
+    padding: 12px 0px 12px;
+    background-color: #8686AB;
+    text-align: left;
+    color: white;
+}
+input[type=text] {
+    border: 1px solid #8686AB;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
